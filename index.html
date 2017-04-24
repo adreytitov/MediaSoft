@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>АвиаЭкспресс</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/forma.css">
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script defer src="js/jquery.flexslider.js"></script>
+        <script defer src="js/aviasales.js"></script>
+        <script defer src="js/pure.min.js"></script>
+        <script defer src="js/underscore.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </head>
+    <body>
+        <nav>
+            <ul class="menu">
+                <a href="#"></a><img src="image/house.png" alt="index">
+               
+                <li><a href="#">Карта сайта</a></li>
+                <li><a class="menu-bold" href="#">Авиабилеты</a></li>
+                <li><a class="menu-bold" href="#">Ж/Д билеты</a></li>
+                <li><a class="menu-bold" href="#">Поиск тура</a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href="#">О компании</a></li>                    
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Пресс-центр</a></li>
+                <li><a href="#">Офисы продаж</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav> 
+        <header>
+            <img class="logo" src="image/Layer.png" alt="logo-text">
+            <img class="logo-a" src="image/A.png" alt="Logo">
+            <h5>Ваша дорога - наша забота!</h5>
+            <p>Авиаэкспресс - крупнейшая в Забайкалье сеть<br> универсальных касс по продаже авиционных,<br> железнодорожных билетов и туристических услуг.</p>
+            <h6>Телефон справочной службы:</h6><br>
+            <h3>+7 (3022) 45-05-05</h3>
+        </header>
+        <div class="left-column">
+            <nav class="cumbs">
+                <a href="#">Главная</a>
+                <a href="#">Услуги</a>
+                <a href="#">Заказ и бронирование авибилетов</a>
+            </nav>
+            <h2>Бронирование авиабилетов</h2>
+            <h4><a href="#">Посмотреть инсрукцию по бронированию</a></h4>
+            <p>Вводный текст, где мы должны написать что дает возможность заказывать билеты<br> именно через нас. Вводный текст, где мы должны написать что дает возможность<br> заказывать билеты именно через нас. Вводный текст, где мы должны написать что дает<br> возможность заказывать билеты именно через нас.</p>
+            
+            <div id="container" class="cf">
+                <div id="main" role="main">
+                    <section class="slider">
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li><img src="image/737.png"></li>
+                                <li><img src="image/319.png"></li>
+                                <li><img src="image/319_1.png"></li>
+                                <li><img src="image/320.png"></li>
+                                <li><img src="image/321.png"></li>
+                                <li><img src="image/737_1.png"></li>
+                                <li><img src="image/767.png"></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <ul id="breadcrumbs">
+                <li><a href="#">Выбор рейса</a></li>
+                <li><a href="#">Информация о пассажирах</a></li>
+                <li><a href="#">Оформление</a></li>
+                <li><a href="#">Результаты бронирования</a></li>
+            </ul>
+      <div class="aviasales_widget aviasales_widget_0">
+    <form accept-charset="UTF-8" action="http://nano.aviasales.ru/searches/new" id="aviasales_search" method="get" name="aviasales_search" target="_blank">
+        <input name="utf8" type="hidden" value="✓">
+        <input name="currency" type="hidden"> 
+        <input id="marker" name="marker" type="hidden" value="<?php echo $aviasales_id; ?>"> 
+        <input id="origin_iata" name="origin_iata" type="hidden" value=""> 
+        <input id="destination_iata" name="destination_iata" type="hidden" value=""> 
+        <input id="is_show_hotels" name="show_hotels" type="hidden" value="false"> 
+        <input id="with_request" name="with_request" type="hidden" value="true">
+		
+        <div class="aviasales_field_block aviasales_origin">
+			<label for="origin_name"><?php echo LANG_WD_AVIASALES_ORIGIN; ?></label>
+			<div class="aviasales_field">
+				<input id="origin_name" name="origin" type="text" value="" placeholder="<?php echo LANG_WD_AVIASALES_ORIGIN; ?>" autocomplete="off" />
+			</div>
+		</div>
+
+        <div class="aviasales_swap"></div>
+
+		<div class="aviasales_field_block aviasales_destination">
+			<label for="destination_name"><?php echo LANG_WD_AVIASALES_DESTINATION; ?></label>
+			<div class="aviasales_field">
+				<input id="destination_name" name="destination" type="text" value="" placeholder="<?php echo LANG_WD_AVIASALES_DESTINATION; ?>" autocomplete="off" />
+			</div>
+		</div>
+
+        <div class="aviasales_field_block aviasales_departure">
+			<label for="depart_date"><?php echo LANG_WD_AVIASALES_DEPART; ?></label><label for="range" class="aviasales_checkbox aviasales_range"><input type="checkbox" id="range" name="range" autocomplete="off" /><?php echo LANG_WD_AVIASALES_RANGE; ?></label>
+			<div class="aviasales_field aviasales_calendar">
+				<input type="text" name="depart_date" id="depart_date" autocomplete="off" />
+			</div>
+		</div>
+
+        <div class="aviasales_field_block aviasales_return">
+			<label for="return_date"><?php echo LANG_WD_AVIASALES_RETURN; ?></label><label for="oneway" class="aviasales_checkbox aviasales_oneway"><input type="checkbox" id="oneway" name="oneway" autocomplete="off" /><?php echo LANG_WD_AVIASALES_ONEWEY; ?></label>
+			<div class="aviasales_field aviasales_calendar">
+				<input type="text" name="return_date" id="return_date" autocomplete="off" />
+			</div>
+		</div>
+
+		<div class="clearblock"></div>
+
+        <div class="aviasales_passenger aviasales_field_block">
+            <label><?php echo LANG_WD_AVIASALES_PASSENGERS; ?></label>
+
+            <div class="aviasales_adult">
+                <div class="aviasales_ico"></div>
+                <div class="aviasales_select">
+                    <span>1</span>
+                    <select name="adults" id="adults" autocomplete="off">
+                        <option selected="selected" value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="aviasales_child">
+                <div class="aviasales_ico"></div>
+                <div class="aviasales_select tiny">
+                    <span>0</span>
+                    <select name="children" id="children" autocomplete="off">
+                        <option selected="selected" value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+            </div>
+			
+			<div class="aviasales_class aviasales_field_block aviasales_show show">
+
+                <label><?php echo LANG_WD_AVIASALES_CLASS; ?></label>
+
+                <div class="aviasales_select medium">
+                    <span><?php echo LANG_WD_AVIASALES_ECONOM; ?></span>
+                    <select name="trip_class" id="trip_class" autocomplete="off">
+                        <option selected="selected" value="0"><?php echo LANG_WD_AVIASALES_ECONOM; ?></option>
+                        <option value="1"><?php echo LANG_WD_AVIASALES_BUSINESS; ?></option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="aviasales_infant aviasales_show show">
+                <div class="aviasales_ico"></div>
+                <div class="aviasales_select tiny">
+                    <span>0</span>
+                    <select name="infants" id="infants" autocomplete="off">
+                        <option selected="selected" value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="aviasales_infant aviasales_hidden hidden">
+                <div class="aviasales_ico"></div>
+                <div class="aviasales_select tiny">
+                    <span>0</span>
+                    <select name="infants" id="infants" autocomplete="off">
+                        <option selected="selected" value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <div class="aviasales_class aviasales_field_block aviasales_hidden hidden">
+
+            <label><?php echo LANG_WD_AVIASALES_CLASS; ?></label>
+
+            <div class="aviasales_select big">
+                <span><?php echo LANG_WD_AVIASALES_ECONOM; ?></span>
+                <select name="trip_class" id="trip_class" autocomplete="off">
+                    <option selected="selected" value="0"><?php echo LANG_WD_AVIASALES_ECONOM; ?></option>
+                    <option value="1"><?php echo LANG_WD_AVIASALES_BUSINESS; ?></option>
+                </select>
+            </div>
+
+        </div>
+		 
+		 <div class="aviasales_submit"><input type="submit" value="" /></div>
+		 <div class="clearblock"></div>
+    </form>
+	
+	<input id="aviasales_city" type="hidden" value="<?php echo $aviasales_city; ?>">
+</div>
+        </div>
+        
+        <div class="right-column">
+            
+        </div>
+    </body>
+</html>
